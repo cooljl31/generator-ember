@@ -19,11 +19,14 @@
     "url": "git://github.com/yeoman/generator-ember.git"
   },
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "yeoman-generator": "~0.16.0",
-    "fleck": "~0.5.1"
+    "yeoman-generator": "~0.21.0",
+    "fleck": "~0.5.1",
+    "snyk": "^1.105.0"
   },
   "devDependencies": {
     "mocha": "*"
@@ -40,5 +43,6 @@
     {
       "type": "BSD"
     }
-  ]
+  ],
+  "snyk": true
 }
